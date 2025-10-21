@@ -1,0 +1,45 @@
+{
+  "header": {
+    "title": "Quick Tow Car Services",
+    "subtitle": "Your trusted 24/7 car towing solution"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "call": "Call Now",
+    "phone": "+1 234 567 890",
+    "email": "info@quicktow.com",
+    "company": "Emdad Al Tariq Transport EST",
+    "address": "Southern 30 Street, Al Thuqbah, Al Khobar 34626, Saudi Arabia"
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Us",
+    "emergency": {
+      "title": "Emergency Ready",
+      "desc": "We are available 24/7 for fast, reliable service when you need it most."
+    },
+    "experienced": {
+      "title": "Experienced Team",
+      "desc": "Our trained professionals ensure safe and efficient towing every time."
+    },
+    "affordable": {
+      "title": "Affordable Prices",
+      "desc": "We provide premium services at honest and competitive prices."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "emergencyTowing": "🚗 Emergency Towing",
+    "roadsideAssistance": "🔧 Roadside Assistance",
+    "accidentRecovery": "⚠️ Accident Recovery",
+    "longDistanceTow": "🛣️ Long Distance Tow"
+  },
+  "feedback": {
+    "title": "Customer Feedback",
+    "comment": "“The best towing service in Al Khobar. Very friendly and reasonably priced.”",
+    "author": "Muhammad Ali"
+  },
+  "team": {
+    "title": "Our Team",
+    "members": ["👨‍🔧 Tabark - Towing Driver","👨‍🔧 Rehan - Towing Driver","👨‍🔧 Faizan - Towing Driver","👨‍🔧 Abdul Razzaq - Towing Driver"]
+  }
+}

@@ -1,0 +1,523 @@
+/* ======================
+   Global Styles
+====================== */
+.app {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* ======================
+   Header
+====================== */
+.header {
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  transition: background 0.4s ease, color 0.4s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+}
+
+.contactInfo a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactInfo a:hover {
+  color: var(--primary-color);
+}
+
+.ctaButton {
+  background: var(--accent-color);
+  color: var(--text-color);
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: var(--primary-color);
+  transform: scale(1.05);
+  color: var(--text-color);
+}
+
+/* ======================
+   Sections
+====================== */
+.section, .sectionAlt {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: var(--section-bg);
+  color: var(--text-color);
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.section h2, .sectionAlt h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section h2::after, .sectionAlt h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: var(--primary-color);
+  display: block;
+  margin: 0.6rem auto;
+  border-radius: 4px;
+}
+
+/* ======================
+   Cards & Lists
+====================== */
+.cardContainer, .gridList {
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card, .serviceCard, .teamCard {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s ease, color 0.4s ease;
+  color: var(--text-color);
+}
+
+.card:hover, .serviceCard:hover, .teamCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card h3, .serviceCard h3, .teamCard h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.card p, .serviceCard p, .teamCard p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+/* ======================
+   Feedback
+====================== */
+.feedback {
+  background: var(--card-bg);
+  border-left: 6px solid var(--primary-color);
+  padding: 2rem;
+  max-width: 650px;
+  margin: 0 auto;
+  border-radius: 12px;
+  font-style: italic;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  color: var(--text-color);
+}
+
+/* ======================
+   Contact
+====================== */
+.contactSection {
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 4rem 2rem;
+  text-align: center;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.contactSection a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contactSection a:hover {
+  color: var(--secondary-color);
+}
+
+/* ======================
+   Footer
+====================== */
+.footer {
+  text-align: center;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  padding: 1rem;
+  font-size: 0.9rem;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* ======================
+   Floating Call Button
+====================== */
+.floatingCall {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--accent-color);
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 0.9rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-decoration: none;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.floatingCall:hover {
+  background: var(--primary-color);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* ======================
+   Theme Toggle Button
+====================== */
+.themeToggle {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  background: var(--accent-color);
+  color: var(--text-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 1200;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.themeToggle:hover {
+  background: var(--primary-color);
+}
+
+/* ======================
+   Schemes
+====================== */
+.scheme1 {
+  --primary-color: #0077b6;
+  --secondary-color: #023e8a;
+  --accent-color: #ffd60a;
+  --background-color: #f8f9fb;
+  --section-bg: #f1f3f5;
+  --card-bg: #ffffff;
+  --text-color: #222;
+  --text-light: #555;
+}
+
+.scheme2 {
+  --primary-color: #9b2226;
+  --secondary-color: #6a040f;
+  --accent-color: #ffba08;
+  --background-color: #fff0f0;
+  --section-bg: #ffe5e5;
+  --card-bg: #ffffff;
+  --text-color: #3b0300;
+  --text-light: #5c0000;
+}
+
+.scheme3 {
+  --primary-color: #007f5f;
+  --secondary-color: #2b9348;
+  --accent-color: #ffdd00;
+  --background-color: #f0fff4;
+  --section-bg: #e6fff1;
+  --card-bg: #ffffff;
+  --text-color: #004d3a;
+  --text-light: #2b6a4f;
+}
+
+/* ======================
+   Dark Theme
+====================== */
+.dark {
+  --primary-color: #ffd60a;
+  --secondary-color: #161b22;
+  --accent-color: #ffd60a;
+  --background-color: #0d1117;
+  --section-bg: #161b22;
+  --card-bg: #161b22;
+  --text-color: #e6edf3;
+  --text-light: #cfcfcf;
+  --contact-text-color: #000; /* Added this for contact text */
+}
+
+/* Then, apply it specifically to the contact section */
+.dark .contactSection {
+  color: var(--contact-text-color);
+}
+/* Links inside contact section */
+.dark .contactSection a {
+  color: #000; /* Default black */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.dark .contactSection a:hover {
+  color: #ff0000; /* Red on hover */
+}
+
+
+/* ======================
+   Responsive Header Images
+====================== */
+.header {
+  transition: background 0.4s ease;
+}
+
+@media (min-width: 992px) {
+  .header {
+    background: url('images/header-desktop.jpg') no-repeat center center/cover;
+    height: 80vh;
+  }
+  .dark .header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+                url('images/header-desktop.jpg') no-repeat center center/cover;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .header {
+    background: url('images/header-mobile.jpg') no-repeat center center/cover;
+    height: 70vh;
+  }
+  .dark .header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+                url('images/header-mobile.jpg') no-repeat center center/cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    background: url('images/header-mobile-small.jpg') no-repeat center center/cover;
+    height: 30vh;
+  }
+  .dark .header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+                url('images/header-mobile-small.jpg') no-repeat center center/cover;
+  }
+}
+
+
+/* ===== Dark Mode Button (Top Right) ===== */
+.themeToggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: 1px solid var(--accent-color);
+  font-weight: 600;
+  background: var(--background-color);
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 1200;
+  transition: all 0.3s ease;
+}
+
+.themeToggle:hover {
+  background: var(--accent-color);
+  color: var(--text-color);
+}
+
+/* ===== Scheme Buttons (Top Left) ===== */
+.schemeButtons {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1200;
+}
+
+.schemeButtons button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid var(--accent-color);
+  background: var(--background-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.schemeButtons button:hover {
+  background: var(--accent-color);
+  color: var(--text-color);
+}
+
+/* ===== Add Top Padding to Body Content ===== */
+.app {
+  padding-top: 80px; /* Adjust this based on button size */
+}
+
+/* ===== Mobile Adjustments ===== */
+@media (max-width: 480px) {
+  .themeToggle {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .schemeButtons button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .app {
+    padding-top: 100px; /* Add extra for small screens if needed */
+  }
+}
+
+
+.locationSection {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background-color: var(--section-bg);
+  color: var(--text-color);
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.locationSection h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.mapContainer {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Floating WhatsApp Button */
+.floatingWhatsApp {
+  position: fixed;
+  bottom: 90px; /* above call button */
+  right: 25px;
+  background: #25D366;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.9rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-decoration: none;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.floatingWhatsApp:hover {
+  background: #128C7E;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* ======================
+   Mobile Responsive
+====================== */
+@media (max-width: 768px) {
+  .floatingCall,
+  .floatingWhatsApp {
+    padding: 0.6rem 1rem; /* smaller padding */
+    font-size: 0.85rem; /* smaller font */
+    gap: 5px; /* smaller gap */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .schemeButtons {
+    flex-direction: column;
+    top: 10px;
+    left: 10px;
+  }
+
+  .schemeButtons button,
+  .themeToggle,
+  .floatingCall,
+  .floatingWhatsApp {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .floatingCall {
+    bottom: 60px;
+  }
+
+  .floatingWhatsApp {
+    bottom: 120px;
+  }
+}
+
+
+/*Language*/
+.langToggle {
+  position: fixed;
+  top: 25px;
+  right: 150px; /* next to dark mode */
+  background: var(--accent-color);
+  color: var(--text-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 1200;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.langToggle:hover {
+  background: var(--primary-color);
+  color: var(--text-color);
+}
