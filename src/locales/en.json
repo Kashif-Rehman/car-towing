@@ -1,29 +1,30 @@
 {
   "header": {
-    "title": "Quick Tow Car Services",
-    "subtitle": "Your trusted 24/7 car towing solution"
+    "title": "Al Faraj Towing Services",
+    "subtitle": "24/7 Vehicle Towing and Roadside Assistance in Dammam"
   },
   "contact": {
     "title": "Contact Us",
     "call": "Call Now",
-    "phone": "+1 234 567 890",
-    "email": "info@quicktow.com",
-    "company": "Emdad Al Tariq Transport EST",
-    "address": "Southern 30 Street, Al Thuqbah, Al Khobar 34626, Saudi Arabia"
+    "phone": "+966 53 612 1365",
+    "phone1": "+966 55 563 2801",
+    "email": "Alfarajtowing@gmail.com",
+    "company": "Al Faraj Towing Services",
+    "address": "Dammam, Saudi Arabia"
   },
   "whyChooseUs": {
     "title": "Why Choose Us",
     "emergency": {
       "title": "Emergency Ready",
-      "desc": "We are available 24/7 for fast, reliable service when you need it most."
+      "desc": "We are available 24/7 for quick and reliable towing service when you need it most."
     },
     "experienced": {
-      "title": "Experienced Team",
-      "desc": "Our trained professionals ensure safe and efficient towing every time."
+      "title": "Experienced Drivers",
+      "desc": "Our professional drivers ensure your vehicle is handled safely and efficiently."
     },
     "affordable": {
-      "title": "Affordable Prices",
-      "desc": "We provide premium services at honest and competitive prices."
+      "title": "Affordable Pricing",
+      "desc": "We offer top-quality towing at fair and transparent prices."
     }
   },
   "services": {
@@ -35,11 +36,17 @@
   },
   "feedback": {
     "title": "Customer Feedback",
-    "comment": "“The best towing service in Al Khobar. Very friendly and reasonably priced.”",
-    "author": "Muhammad Ali"
+    "comment": "“Fast and professional service in Dammam. Highly recommended!”",
+    "author": "Ahmed Khan"
   },
   "team": {
     "title": "Our Team",
-    "members": ["👨‍🔧 Tabark - Towing Driver","👨‍🔧 Rehan - Towing Driver","👨‍🔧 Faizan - Towing Driver","👨‍🔧 Abdul Razzaq - Towing Driver"]
+    "members": [
+      "👨‍🔧 Ghazanffar Ali - Tow Driver",
+      "👨‍🔧 Sajid Mehmood - Tow Driver"
+    ]
+  },
+  "location": {
+    "title": "Our Location"
   }
 }

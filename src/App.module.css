@@ -269,6 +269,51 @@
   --text-light: #2b6a4f;
 }
 
+/* Header title and subtitle color in schemes (not dark mode) */
+.scheme1 .header .title,
+.scheme2 .header .title,
+.scheme3 .header .title {
+  color: #ffd60a; /* yellow */
+}
+
+.scheme1 .header .subtitle,
+.scheme2 .header .subtitle,
+.scheme3 .header .subtitle {
+  color: #ffd60a; /* yellow */
+}
+
+
+
+/* Contact section text and links white only in schemes */
+.scheme1 .contactSection,
+.scheme2 .contactSection,
+.scheme3 .contactSection {
+  color: #ffffff; /* text white */
+}
+
+.scheme1 .contactSection a,
+.scheme2 .contactSection a,
+.scheme3 .contactSection a {
+  color: #dafa0b; /* links white */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.scheme1 .contactSection a:hover,
+.scheme2 .contactSection a:hover,
+.scheme3 .contactSection a:hover {
+  color: #ff0000; /* red on hover */
+}
+
+/*Scheme button in Dark*/
+/* Dark mode: Scheme buttons */
+.dark .schemeButtons button:hover {
+  background: var(--accent-color); /* keep the hover background */
+  color: #000; /* black text on hover */
+}
+
+
 /* ======================
    Dark Theme
 ====================== */
@@ -301,6 +346,28 @@
   color: #ff0000; /* Red on hover */
 }
 
+/* Dark mode: Call Now button */
+.dark .ctaButton {
+  background: var(--accent-color); /* keep background same */
+  color: #000; /* black text */
+}
+
+.dark .ctaButton:hover {
+  background: var(--primary-color);
+  color: #000; /* black text on hover */
+}
+
+/* Dark mode: Floating Call button */
+.dark .floatingCall {
+  background: var(--accent-color);
+  color: #000; /* black text */
+}
+
+.dark .floatingCall:hover {
+  background: var(--primary-color);
+  color: #000; /* black text on hover */
+}
+
 
 /* ======================
    Responsive Header Images
@@ -309,38 +376,47 @@
   transition: background 0.4s ease;
 }
 
-@media (min-width: 992px) {
-  .header {
-    background: url('images/header-desktop.jpg') no-repeat center center/cover;
-    height: 80vh;
-  }
-  .dark .header {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
-                url('images/header-desktop.jpg') no-repeat center center/cover;
-  }
+/* Default (for desktops and large screens) */
+.header {
+  background: url('images/img7.jpg') no-repeat center center/cover;
+  height: 80vh;
 }
 
-@media (max-width: 768px) and (min-width: 481px) {
+.dark .header {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+              url('images/img7.jpg') no-repeat center center/cover;
+}
+
+/* Medium devices (tablets, small laptops) */
+@media (max-width: 991px) {
   .header {
-    background: url('images/header-mobile.jpg') no-repeat center center/cover;
-    height: 70vh;
+    background: url('images/img8.jpg') no-repeat center center/cover;
+    height: 65vh;
   }
+
   .dark .header {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
-                url('images/header-mobile.jpg') no-repeat center center/cover;
+                url('images/img8.jpg') no-repeat center center/cover;
   }
 }
 
 @media (max-width: 480px) {
   .header {
-    background: url('images/header-mobile-small.jpg') no-repeat center center/cover;
-    height: 30vh;
+    background: url('images/img9.jpg') no-repeat center center;
+    background-size: contain;
+    background-color: #000; /* fallback */
+    height: auto;
+    min-height: 250px; /* ensure some visible area */
   }
+
   .dark .header {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
-                url('images/header-mobile-small.jpg') no-repeat center center/cover;
+                url('images/img9.jpg') no-repeat center center;
+    background-size: contain;
+    background-color: #000;
   }
 }
+
 
 
 /* ===== Dark Mode Button (Top Right) ===== */
@@ -385,11 +461,25 @@
   font-weight: 600;
   transition: all 0.3s ease;
 }
-
-.schemeButtons button:hover {
-  background: var(--accent-color);
-  color: var(--text-color);
+/* Hover colors matching each scheme */
+.schemeButtons button:nth-child(1):hover {
+  background: #0077b6; /* scheme1 primary color */
+  color: #fff;
+  border: 1px solid #0077b6;
 }
+
+.schemeButtons button:nth-child(2):hover {
+  background: #9b2226; /* scheme2 primary color */
+  color: #fff;
+  border: 1px solid #9b2226;
+}
+
+.schemeButtons button:nth-child(3):hover {
+  background: #007f5f; /* scheme3 primary color */
+  color: #fff;
+  border: 1px solid #007f5f;
+}
+
 
 /* ===== Add Top Padding to Body Content ===== */
 .app {
@@ -520,4 +610,87 @@
 .langToggle:hover {
   background: var(--primary-color);
   color: var(--text-color);
+}
+
+/* Dark Mode */
+.dark .langToggle {
+  background: #161b22; /* dark background */
+  color: #ffd60a;      /* accent text color */
+  border: 1px solid #ffd60a;
+}
+
+.dark .langToggle:hover {
+  background: #ffd60a; /* highlight */
+  color: #000;         /* text black on hover */
+}
+
+
+/* ======================
+   Image Slider
+====================== */
+/* Image slider container */
+.sliderSection {
+  width: 100%;
+  max-width: 1000px;
+  margin: 3rem auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+/* Wrapper for each slide */
+.slideWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* ✅ Blurred background for full coverage */
+.slideBackground {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px) brightness(0.6);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+/* Foreground image (main one) */
+.slideImage {
+  position: relative;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* Dark mode styling */
+.dark .sliderSection {
+  box-shadow: 0 6px 25px rgba(255, 214, 10, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mySwiper {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mySwiper {
+    height: 200px;
+  }
 }
