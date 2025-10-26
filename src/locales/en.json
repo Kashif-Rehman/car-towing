@@ -1,52 +1,66 @@
 {
   "header": {
-    "title": "Al Faraj Towing Services",
-    "subtitle": "24/7 Vehicle Towing and Roadside Assistance in Dammam"
+    "title": "Al Faraj Towing Services – Reliable Tow Truck in Dammam",
+    "subtitle": "24/7 سطحة | Flatbed Tow Truck & Roadside Assistance Across Dammam and Nearby Cities"
   },
   "contact": {
     "title": "Contact Us",
     "call": "Call Now",
-    "phone": "+966 53 612 1365",
-    "phone1": "+966 55 563 2801",
+    "phone": "0536121365",
+    "phone1": "0555632801",
     "email": "Alfarajtowing@gmail.com",
     "company": "Al Faraj Towing Services",
-    "address": "Dammam, Saudi Arabia"
+    "address": "Dammam, Saudi Arabia – Fast 24/7 Tow Truck (سطحة) Assistance"
   },
   "whyChooseUs": {
-    "title": "Why Choose Us",
+    "title": "Why Choose Al Faraj Tow Truck (سطحة) Service",
     "emergency": {
-      "title": "Emergency Ready",
-      "desc": "We are available 24/7 for quick and reliable towing service when you need it most."
+      "title": "Always Ready for Emergencies",
+      "desc": "Our tow trucks (سطحة) are available 24/7 across Dammam and the Eastern Province for quick roadside recovery and towing service whenever you need it."
     },
     "experienced": {
-      "title": "Experienced Drivers",
-      "desc": "Our professional drivers ensure your vehicle is handled safely and efficiently."
+      "title": "Experienced Tow Truck Drivers",
+      "desc": "Our certified and skilled drivers handle your vehicle with care using modern flatbed سطحة trucks, ensuring safe and damage-free transportation."
     },
     "affordable": {
-      "title": "Affordable Pricing",
-      "desc": "We offer top-quality towing at fair and transparent prices."
+      "title": "Affordable and Transparent Pricing",
+      "desc": "We offer reliable towing services at competitive prices in Dammam with no hidden charges — just honest, professional service."
     }
   },
   "services": {
-    "title": "Our Services",
-    "emergencyTowing": "🚗 Emergency Towing",
-    "roadsideAssistance": "🔧 Roadside Assistance",
-    "accidentRecovery": "⚠️ Accident Recovery",
-    "longDistanceTow": "🛣️ Long Distance Tow"
+    "title": "Our Towing Services in Dammam",
+    "emergencyTowing": "🚗 Emergency Towing (سطحة طوارئ)",
+    "roadsideAssistance": "🔧 Roadside Assistance & Jump Start",
+    "accidentRecovery": "⚠️ Accident Recovery and Winch Service",
+    "longDistanceTow": "🛣️ Long Distance & Intercity Towing"
   },
   "feedback": {
     "title": "Customer Feedback",
-    "comment": "“Fast and professional service in Dammam. Highly recommended!”",
+    "comment": "“Excellent towing service (سطحة) in Dammam! They arrived quickly and handled my car professionally. Highly recommended.”",
     "author": "Ahmed Khan"
   },
   "team": {
-    "title": "Our Team",
-    "members": [
-      "👨‍🔧 Ghazanffar Ali - Tow Driver",
-      "👨‍🔧 Sajid Mehmood - Tow Driver"
-    ]
+  "title": "Our Professional Tow Truck Team",
+  "members": [
+    {
+      "name": "👨‍🔧 Ghazanffar Ali",
+      "role": "Expert Tow Truck (سطحة) Driver",
+      "phone": "0536121365",
+      "whatsapp": "966536121365"
+    },
+    {
+      "name": "👨‍🔧 Sajid Mehmood",
+      "role": "Expert Tow Truck (سطحة) Driver",
+      "phone": "0555632801",
+      "whatsapp": "966555632801"
+    }
+  ]
   },
   "location": {
-    "title": "Our Location"
+    "title": "Our Location in Dammam – سطحة Near You"
+  },
+  "seo": {
+    "metaTitle": "Al Faraj Towing – سطحة Dammam | 24/7 Tow Truck Service in Saudi Arabia",
+    "metaDescription": "Looking for reliable سطحة (tow truck) in Dammam? Al Faraj Towing offers 24/7 towing, roadside assistance, accident recovery, and long-distance tow service across the Eastern Province."
   }
 }

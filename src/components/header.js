@@ -13,6 +13,7 @@ export default function Header() {
 
         <div className={styles.contactInfo}>
           <p>📞 <a href={`tel:${t('contact.phone')}`}>{t('contact.phone')}</a></p>
+          <p>📞 <a href={`tel:${t('contact.phone1')}`}>{t('contact.phone1')}</a></p>
           <p>✉️ <a href={`mailto:${t('contact.email')}`}>{t('contact.email')}</a></p>
         </div>
 

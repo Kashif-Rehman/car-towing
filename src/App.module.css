@@ -9,6 +9,17 @@
   transition: background 0.4s ease, color 0.4s ease;
 }
 
+:root {
+  --primary-color: #d90429; /* Red truck */
+  --secondary-color: #2b2d42; /* Deep gray */
+  --accent-color: #ffba08; /* Yellow accent */
+  --background-color: #f8f9fa; /* Light gray */
+  --section-bg: #ffffff; /* White */
+  --card-bg: #ffffff;
+  --text-color: #1a1a1a;
+  --text-light: #555;
+}
+
 /* ======================
    Header
 ====================== */
@@ -26,11 +37,13 @@
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(20, 20, 20, 0.6);
   padding: 3rem 2rem;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
+
 
 .title {
   font-size: 2.8rem;
@@ -38,12 +51,16 @@
   letter-spacing: 1px;
   margin-bottom: 0.5rem;
   color: var(--primary-color);
+  -webkit-text-stroke: 1px #ffffff; /* white border */
+  paint-order: stroke fill; /* ensures stroke appears outside */
 }
+
+
 
 .subtitle {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
-  color: var(--text-light);
+  color: white;
 }
 
 .contactInfo a {
@@ -71,6 +88,8 @@
   transform: scale(1.05);
   color: var(--text-color);
 }
+
+
 
 /* ======================
    Sections
@@ -115,7 +134,7 @@
   background: var(--card-bg);
   border-radius: 16px;
   padding: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px #d90429;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s ease, color 0.4s ease;
   color: var(--text-color);
 }
@@ -134,6 +153,80 @@
   font-size: 0.95rem;
   color: var(--text-light);
 }
+
+.memberName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.3rem;
+}
+
+.memberRole {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 0.8rem;
+}
+
+
+.teamContact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.teamContact a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 1000;
+}
+
+.phoneLink {
+  color: #0077b6;
+}
+
+.phoneLink:hover {
+  text-decoration: underline;
+}
+
+.dark .whatsappLink {
+  color: #25D366;
+}
+
+.whatsappLink:hover {
+  text-decoration: underline;
+  color: #d90429;
+}
+
+.dark .phoneLink {
+  color: #ffba08;
+}
+
+.phoneLink:hover {
+  text-decoration: underline;
+  color: #d90429;
+}
+
+.whatsappLink {
+  color: #25D366;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .teamContact {
+    gap: 0.4rem;
+  }
+  .teamMemberName {
+    font-size: 1.1rem;
+  }
+  .teamMemberRole {
+    font-size: 0.85rem;
+  }
+}
+
+
 
 /* ======================
    Feedback
@@ -177,7 +270,7 @@
 .footer {
   text-align: center;
   background: var(--secondary-color);
-  color: var(--text-color);
+  color: white;
   padding: 1rem;
   font-size: 0.9rem;
   transition: background 0.4s ease, color 0.4s ease;
@@ -233,85 +326,7 @@
   background: var(--primary-color);
 }
 
-/* ======================
-   Schemes
-====================== */
-.scheme1 {
-  --primary-color: #0077b6;
-  --secondary-color: #023e8a;
-  --accent-color: #ffd60a;
-  --background-color: #f8f9fb;
-  --section-bg: #f1f3f5;
-  --card-bg: #ffffff;
-  --text-color: #222;
-  --text-light: #555;
-}
 
-.scheme2 {
-  --primary-color: #9b2226;
-  --secondary-color: #6a040f;
-  --accent-color: #ffba08;
-  --background-color: #fff0f0;
-  --section-bg: #ffe5e5;
-  --card-bg: #ffffff;
-  --text-color: #3b0300;
-  --text-light: #5c0000;
-}
-
-.scheme3 {
-  --primary-color: #007f5f;
-  --secondary-color: #2b9348;
-  --accent-color: #ffdd00;
-  --background-color: #f0fff4;
-  --section-bg: #e6fff1;
-  --card-bg: #ffffff;
-  --text-color: #004d3a;
-  --text-light: #2b6a4f;
-}
-
-/* Header title and subtitle color in schemes (not dark mode) */
-.scheme1 .header .title,
-.scheme2 .header .title,
-.scheme3 .header .title {
-  color: #ffd60a; /* yellow */
-}
-
-.scheme1 .header .subtitle,
-.scheme2 .header .subtitle,
-.scheme3 .header .subtitle {
-  color: #ffd60a; /* yellow */
-}
-
-
-
-/* Contact section text and links white only in schemes */
-.scheme1 .contactSection,
-.scheme2 .contactSection,
-.scheme3 .contactSection {
-  color: #ffffff; /* text white */
-}
-
-.scheme1 .contactSection a,
-.scheme2 .contactSection a,
-.scheme3 .contactSection a {
-  color: #dafa0b; /* links white */
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.scheme1 .contactSection a:hover,
-.scheme2 .contactSection a:hover,
-.scheme3 .contactSection a:hover {
-  color: #ff0000; /* red on hover */
-}
-
-/*Scheme button in Dark*/
-/* Dark mode: Scheme buttons */
-.dark .schemeButtons button:hover {
-  background: var(--accent-color); /* keep the hover background */
-  color: #000; /* black text on hover */
-}
 
 
 /* ======================
@@ -328,6 +343,22 @@
   --text-light: #cfcfcf;
   --contact-text-color: #000; /* Added this for contact text */
 }
+/* ======================
+   Dark Mode: Header Contact + Call Button Hover
+====================== */
+.dark .contactInfo a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dark .contactInfo a:hover {
+  color: #ff0000; /* Red hover in dark mode */
+}
+
+
+
+
 
 /* Then, apply it specifically to the contact section */
 .dark .contactSection {
@@ -353,8 +384,8 @@
 }
 
 .dark .ctaButton:hover {
-  background: var(--primary-color);
-  color: #000; /* black text on hover */
+  background: #ff0000 ;
+  color: var(--primary-color); /* Red text on hover */
 }
 
 /* Dark mode: Floating Call button */
@@ -402,7 +433,7 @@
 
 @media (max-width: 480px) {
   .header {
-    background: url('images/img9.jpg') no-repeat center center;
+    background: url('images/img1.jpg') no-repeat center center;
     background-size: contain;
     background-color: #000; /* fallback */
     height: auto;
@@ -411,74 +442,79 @@
 
   .dark .header {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
-                url('images/img9.jpg') no-repeat center center;
+                url('images/img1.jpg') no-repeat center center;
     background-size: contain;
     background-color: #000;
   }
+
+  /* --- Overlay content adjustments --- */
+  .overlay {
+    padding: 1.2rem 1rem;
+    text-align: center;
+  }
+
+  .overlay h1,
+  .overlay .title {
+    font-size: 1.4rem; /* resized title */
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
+  }
+
+  .overlay p,
+  .overlay .subtitle {
+    font-size: 0.9rem; /* smaller subtitle */
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+  }
+
+  .overlay .contactInfo {
+    font-size: 0.85rem;
+  }
+
+  .overlay a,
+  .overlay .ctaButton {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
 }
+
 
 
 
 /* ===== Dark Mode Button (Top Right) ===== */
 .themeToggle {
   position: fixed;
-  top: 15px;
-  right: 15px;
-  padding: 0.5rem 1rem;
+  top: 20px;
+  right: 20px; /* moved to right corner */
+  background: var(--accent-color);
+  color: var(--secondary-color);
+  padding: 0.6rem 1.2rem;
   border-radius: 25px;
-  border: 1px solid var(--accent-color);
   font-weight: 600;
-  background: var(--background-color);
-  color: var(--text-color);
   cursor: pointer;
   z-index: 1200;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
+  border: 1px solid var(--accent-color);
 }
 
 .themeToggle:hover {
-  background: var(--accent-color);
-  color: var(--text-color);
-}
-
-/* ===== Scheme Buttons (Top Left) ===== */
-.schemeButtons {
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  z-index: 1200;
-}
-
-.schemeButtons button {
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  border: 1px solid var(--accent-color);
-  background: var(--background-color);
-  color: var(--text-color);
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-/* Hover colors matching each scheme */
-.schemeButtons button:nth-child(1):hover {
-  background: #0077b6; /* scheme1 primary color */
+  background: var(--primary-color);
   color: #fff;
-  border: 1px solid #0077b6;
+}
+/* Dark Mode */
+.dark .themeToggle {
+  background: #161b22; /* dark background */
+  color: #ffd60a;      /* accent text color */
+  border: 1px solid #ffd60a;
 }
 
-.schemeButtons button:nth-child(2):hover {
-  background: #9b2226; /* scheme2 primary color */
-  color: #fff;
-  border: 1px solid #9b2226;
+.dark .themeToggle:hover {
+  background: #ffd60a; /* highlight */
+  color: #000;         /* text black on hover */
 }
 
-.schemeButtons button:nth-child(3):hover {
-  background: #007f5f; /* scheme3 primary color */
-  color: #fff;
-  border: 1px solid #007f5f;
-}
 
 
 /* ===== Add Top Padding to Body Content ===== */
@@ -489,8 +525,12 @@
 /* ===== Mobile Adjustments ===== */
 @media (max-width: 480px) {
   .themeToggle {
-    padding: 0.35rem 0.6rem;
-    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    top: 12px;
+  }
+  .themeToggle {
+    right: 12px;
   }
 
   .schemeButtons button {
@@ -594,8 +634,8 @@
 /*Language*/
 .langToggle {
   position: fixed;
-  top: 25px;
-  right: 150px; /* next to dark mode */
+  top: 20px;
+  left: 20px; /* moved to left corner */
   background: var(--accent-color);
   color: var(--text-color);
   padding: 0.6rem 1.2rem;
@@ -605,11 +645,12 @@
   z-index: 1200;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
+  border: 1px solid var(--accent-color);
 }
 
 .langToggle:hover {
   background: var(--primary-color);
-  color: var(--text-color);
+  color: #fff;
 }
 
 /* Dark Mode */
@@ -693,4 +734,38 @@
   .mySwiper {
     height: 200px;
   }
+}
+
+
+/* ======================
+   Dark Mode: Cards & Lists
+====================== */
+.dark .card,
+.dark .serviceCard,
+.dark .teamCard {
+  background: #161b22; /* matches dark section background */
+  color: #e6edf3;
+  border: 1px solid rgba(255, 214, 10, 0.15); /* soft yellow border for accent */
+  box-shadow: 0 4px 15px rgba(255, 214, 10, 0.1); /* subtle golden glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s ease, color 0.4s ease;
+}
+
+.dark .card h3,
+.dark .serviceCard h3,
+.dark .teamCard h3 {
+  color: #ffd60a; /* bright gold for headings */
+}
+
+.dark .card p,
+.dark .serviceCard p,
+.dark .teamCard p {
+  color: #cfcfcf; /* lighter text for readability */
+}
+
+.dark .card:hover,
+.dark .serviceCard:hover,
+.dark .teamCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(255, 214, 10, 0.25); /* stronger golden shadow */
+  background: linear-gradient(145deg, #1b1f27, #161b22);
 }
