@@ -36,6 +36,7 @@
   background-repeat: no-repeat;
 }
 
+
 .overlay {
   background: rgba(20, 20, 20, 0.6);
   padding: 3rem 2rem;
@@ -63,6 +64,7 @@
   color: white;
 }
 
+
 .contactInfo a {
   color: var(--accent-color);
   text-decoration: none;
@@ -73,6 +75,7 @@
 .contactInfo a:hover {
   color: var(--primary-color);
 }
+
 
 .ctaButton {
   background: var(--accent-color);
@@ -184,6 +187,7 @@
   font-weight: 1000;
 }
 
+
 .phoneLink {
   color: #0077b6;
 }
@@ -249,7 +253,8 @@
 ====================== */
 .contactSection {
   background: var(--primary-color);
-  color: var(--text-color);
+  color: white;
+  
   padding: 4rem 2rem;
   text-align: center;
   transition: background 0.4s ease, color 0.4s ease;

@@ -6,8 +6,10 @@
   "contact": {
     "title": "Contact Us",
     "call": "Call Now",
-    "phone": "0536121365",
-    "phone1": "0555632801",
+    "phone": "+966536121365",
+    "phone1": "+966555632801",
+    "whatsapp": "966536121365",
+    "whatsapp1": "966536121365",
     "email": "Alfarajtowing@gmail.com",
     "company": "Al Faraj Towing Services",
     "address": "Dammam, Saudi Arabia – Fast 24/7 Tow Truck (سطحة) Assistance"
@@ -45,13 +47,13 @@
     {
       "name": "👨‍🔧 Ghazanffar Ali",
       "role": "Expert Tow Truck (سطحة) Driver",
-      "phone": "0536121365",
+      "phone": "+966536121365",
       "whatsapp": "966536121365"
     },
     {
       "name": "👨‍🔧 Sajid Mehmood",
       "role": "Expert Tow Truck (سطحة) Driver",
-      "phone": "0555632801",
+      "phone": "+966555632801",
       "whatsapp": "966555632801"
     }
   ]

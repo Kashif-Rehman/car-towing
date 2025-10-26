@@ -82,6 +82,11 @@ export default function SeoMeta({ lang = "en" }) {
           {"@type": "City", "name": "Qatif"},
           {"@type": "City", "name": "Ras Tanura"}
         ],
+         "potentialAction": {
+         "@type": "CallAction",
+         "target": "tel:+966536121365",
+        "name": "Call Now"
+        }
         "description": "${m.description}",
         "openingHours": "Mo-Su 00:00-23:59",
         "priceRange": "$$",
